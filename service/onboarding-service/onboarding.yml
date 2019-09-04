@@ -1,2 +1,11 @@
 server:
-  port: 8192
+  servlet:
+    context-path: /onboarding
+  port: 9182
+security:
+  oauth2:
+    resource:
+      token-info-uri: http://localhost:9181/oauth/check_token
+    client:
+      client-id: mobile
+      client-secret: pin
