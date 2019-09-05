@@ -38,6 +38,12 @@ zuul:
       serviceId: ONBOARDING
       stripPrefix: false
       sensitiveHeaders:
+      
+    search-service:
+      path: /search/**
+      serviceId: SEARCH
+      stripPrefix: false
+      sensitiveHeaders:      
 
 server:
   port: 9180
