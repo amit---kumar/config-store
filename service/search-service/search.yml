@@ -1,7 +1,7 @@
 server:
   servlet:
     context-path: /search
-  port: 9183
+  port: 9184
 security:
   oauth2:
     resource:
