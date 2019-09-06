@@ -1,7 +1,7 @@
 server:
   servlet:
     context-path: /onboarding
-  port: 9184
+  port: 9182
 security:
   oauth2:
     resource:
