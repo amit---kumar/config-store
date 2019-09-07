@@ -17,7 +17,7 @@ spring:
 
 
 ribbon:
-  ReadTimeout: 20000
+  ReadTimeout: 40000
   ConnectTimeout: 20000
 
 zuul:
