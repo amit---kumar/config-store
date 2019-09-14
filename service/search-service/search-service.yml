@@ -1,6 +1,6 @@
 server:
   servlet:
-    context-path: /search
+    context-path: /SEARCH-SERVICE
   port: 9185
 security:
   oauth2:
