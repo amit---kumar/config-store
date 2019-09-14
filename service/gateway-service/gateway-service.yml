@@ -35,13 +35,13 @@ zuul:
 
     onboarding-service:
       path: /onboarding/**
-      serviceId: ONBOARDING
+      serviceId: ONBOARDING-SERVICE
       stripPrefix: false
       sensitiveHeaders:
       
     search-service:
       path: /search/**
-      serviceId: SEARCH
+      serviceId: SEARCH-SERVICE
       stripPrefix: false
       sensitiveHeaders:      
 
