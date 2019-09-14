@@ -29,7 +29,7 @@ zuul:
   routes:
     auth-service:
       path: /oauth/**
-      url: AUTH-SERVER
+      url: OAUTH-SERVICE
       stripPrefix: false
       sensitiveHeaders:
 
