@@ -50,6 +50,7 @@ server:
 eureka:
   instance:
     prefer-ip-address: true
+    hostname: gateway-service
   client:
     register-with-eureka: true
     fetch-registry: true
