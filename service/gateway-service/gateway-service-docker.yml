@@ -48,6 +48,8 @@ server:
   port: 9180
 
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
     register-with-eureka: true
     fetch-registry: true
