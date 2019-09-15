@@ -26,9 +26,9 @@ zuul:
     socket-timeout-millis: 20000
 
   routes:
-    auth-service:
+    oauth-service:
       path: /oauth/**
-      url: OAUTH-SERVICE
+      serviceId: OAUTH-SERVICE
       stripPrefix: false
       sensitiveHeaders:
 
