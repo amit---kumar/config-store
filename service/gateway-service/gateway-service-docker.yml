@@ -1,0 +1,57 @@
+logging:
+  level:
+    org.springframework.security: INFO
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 100000
+
+spring:
+  rabbitmq:
+    host: rabbitmq
+
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+
+  routes:
+    auth-service:
+      path: /oauth/**
+      url: OAUTH-SERVICE
+      stripPrefix: false
+      sensitiveHeaders:
+
+    onboarding-service:
+      path: /onboarding/**
+      serviceId: ONBOARDING-SERVICE
+      stripPrefix: false
+      sensitiveHeaders:
+      
+    search-service:
+      path: /search/**
+      serviceId: SEARCH-SERVICE
+      stripPrefix: false
+      sensitiveHeaders:      
+
+server:
+  port: 9180
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://eureka-service:8889/eureka/
+  instance:
+    hostname: localhost
