@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /onboarding
+  port: 9184
+security:
+  oauth2:
+    resource:
+      token-info-uri: http://oauth-service:9181/oauth/check_token
+    client:
+      client-id: mobile
+      client-secret: pin
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://eureka-service:8889/eureka/
+  instance:
+    hostname: localhost
