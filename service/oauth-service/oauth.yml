@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/lms?createDatabaseIfNotExist=true
     username: root
-    password: Manhind@3456
+    password: password
     driver-class-name: com.mysql.jdbc.Driver
     initialization-mode: always
   jpa:
