@@ -1,4 +1,19 @@
-driverClassName=com.mysql.jdbc.Driver
-url=mysql:jdbc://localhost:3306/test
-username=root
-password=password
+server:
+  servlet:
+    context-path: /search
+  port: 9185
+security:
+  oauth2:
+    resource:
+      token-info-uri: http://localhost:9181/oauth/oauth/check_token
+    client:
+      client-id: mobile
+      client-secret: pin
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8889/eureka/
+  instance:
+    hostname: localhost
