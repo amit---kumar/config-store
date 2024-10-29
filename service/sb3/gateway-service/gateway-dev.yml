@@ -1,8 +1,6 @@
 server:
   port: 8890
 eureka:
-  instance:
-    preferIpAddress: true
   client:
     register-with-eureka: true
     fetch-registry: true
