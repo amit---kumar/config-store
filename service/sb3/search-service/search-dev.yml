@@ -1,7 +1,5 @@
 server:
   port: 9185
-  servlet:
-    context-path: /search
 eureka:
   instance:
     preferIpAddress: true
